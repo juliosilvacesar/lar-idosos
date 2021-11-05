@@ -25,31 +25,31 @@
             </div>
         </nav>
         <div class="container px-5 my-5">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="/backend/send.php">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="send.php">
                 <div class="form-floating mb-3">
                     <input class="form-control" name="name" type="text" placeholder="Nome" data-sb-validations="required" />
-                    <label for="nome">Nome</label>
+                    <label >Nome</label>
                     <div class="invalid-feedback" data-sb-feedback="nome:required">Nome is required.</div>
                 </div>
                 <div class="form-floating mb-3">
                     <input class="form-control" name="telephone" type="text" placeholder="Telefone" data-sb-validations="required" />
-                    <label for="telefone">Telefone</label>
+                    <label for="para">Telefone</label>
                     <div class="invalid-feedback" data-sb-feedback="telefone:required">Telefone is required.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" name="message" type="email" placeholder="Email " data-sb-validations="required,email" />
-                    <label for="email">Email </label>
+                    <input class="form-control" name="email" type="email" placeholder="Email"  id="para" data-sb-validations="required,email" />
+                    <label for="para">Email </label>
                     <div class="invalid-feedback" data-sb-feedback="email:required">Email is required.</div>
                     <div class="invalid-feedback" data-sb-feedback="email:email">Email Email is not valid.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" name="message" type="text" placeholder="Messagem" style="height: 10rem;" data-sb-validations="required"></textarea>
-                    <label for="messagem">Messagem</label>
+                    <textarea class="form-control" name="message" id="message" type="text" placeholder="Messagem" style="height: 10rem;" data-sb-validations="required"></textarea>
+                    <label for="message">Messagem</label>
                     <div class="invalid-feedback" data-sb-feedback="messagem:required">Messagem is required.</div>
                 </div>
 
                  <!-- submissão-->
-                <div class="d-none" id="submitSuccessMessage">
+                <!-- <div class="d-none" id="submit">
                     <div class="text-center mb-3">
                         <div class="fw-bolder">Mensagem Enviada com sucesso.</div>
                         <p>Em breve a empresa entrará em contato com voce!</p>
@@ -58,9 +58,9 @@
                 </div>
                 <div class="d-none" id="submitErrorMessage">
                     <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
+                </div> -->
                 <div class="d-grid">
-                    <button class="btn-primary"  value="Enviar"type="submit">Submit</button>
+                    <button class="btn-primary" type="submit">Submit</button>
                 </div>
             </form>
         </div>
