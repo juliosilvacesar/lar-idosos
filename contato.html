@@ -25,42 +25,31 @@
             </div>
         </nav>
         <div class="container px-5 my-5">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="processa_envio.php">
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="nome" type="text" placeholder="Nome" data-sb-validations="required" />
+                    <input class="form-control" id="nome" name="nome" type="text" placeholder="Nome" data-sb-validations="required" />
                     <label for="nome">Nome</label>
                     <div class="invalid-feedback" data-sb-feedback="nome:required">Nome is required.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="telefone" type="text" placeholder="Telefone" data-sb-validations="required" />
+                    <input class="form-control" id="telefone" name="telefone" type="text" placeholder="Telefone" data-sb-validations="required" />
                     <label for="telefone">Telefone</label>
                     <div class="invalid-feedback" data-sb-feedback="telefone:required">Telefone is required.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="email" type="email" placeholder="Email " data-sb-validations="required,email" />
+                    <input class="form-control" id="email" name="email" type="email" placeholder="Email " data-sb-validations="required,email" />
                     <label for="email">Email </label>
                     <div class="invalid-feedback" data-sb-feedback="email:required">Email is required.</div>
                     <div class="invalid-feedback" data-sb-feedback="email:email">Email Email is not valid.</div>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="messagem" type="text" placeholder="Messagem" style="height: 10rem;" data-sb-validations="required"></textarea>
+                    <textarea class="form-control" id="messagem" name="mensagem" type="text" placeholder="Messagem" style="height: 10rem;" data-sb-validations="required"></textarea>
                     <label for="messagem">Messagem</label>
                     <div class="invalid-feedback" data-sb-feedback="messagem:required">Messagem is required.</div>
                 </div>
 
-                 <!-- submissão-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                        <div class="fw-bolder">Form submission successful!</div>
-                        <p>To activate this form, sign up at</p>
-                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                    </div>
-                </div>
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
                 <div class="d-grid">
-                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                    <button  id="submitButton" type="submit">Submit</button>
                 </div>
             </form>
         </div>
