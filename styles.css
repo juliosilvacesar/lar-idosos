@@ -11154,12 +11154,3 @@ section {
     border: none;
     color: purple;
 }
-
-.result_tr {
-    transition: all 0.2s;
-}
-
-.result_tr:hover {
-    transform: scale(1.03);
-    box-shadow: 0 3px 10px #00000022;
-}
