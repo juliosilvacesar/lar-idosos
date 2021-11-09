@@ -12,7 +12,7 @@ $result = mysqli_query($conn, "SELECT * FROM empresas");
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Nação Idosa</title>
+    <title href="index.html">Nação Idosa</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
@@ -96,7 +96,7 @@ $result = mysqli_query($conn, "SELECT * FROM empresas");
 
     function contato(e) {
         let id = e.getAttribute('value');
-        window.location.href = "contato.html?id=" + id;
+        window.location.href = "contato.php?id=" + id;
     }
     </script>
 </body>

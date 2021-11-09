@@ -88,7 +88,7 @@ $id_empresa = $_SESSION['id_empresa'];
     <script>
     function contato(e) {
         let id = e.getAttribute('value');
-        window.location.href = "contato.html?id=" + id;
+        window.location.href = "contato.php?id=" + id;
     }
     </script>
 
